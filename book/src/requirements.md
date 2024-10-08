@@ -7,7 +7,7 @@ This page lists the requirements for running `bindgen` and how to get them.
 `bindgen` leverages `libclang` to preprocess, parse, and type check C and C++
 header files.
 
-It is required to use Clang 5.0 or greater.
+It is required to use Clang 9.0 or greater.
 
 ### Installing Clang
 
@@ -48,10 +48,10 @@ $ port install clang
 #### Debian-based Linuxes
 
 ```bash
-# apt install llvm-dev libclang-dev clang
+# apt install libclang-dev
 ```
 
-Ubuntu 18.04 provides the necessary packages directly.
+If you want to use the function `bindgen::Builder::dump_preprocessed_input`, then you also need the package `clang`.
 
 #### Arch
 

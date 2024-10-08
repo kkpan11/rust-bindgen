@@ -216,8 +216,10 @@
 # Unreleased
 ## Added
 ## Changed
+- The `--wrap-static-fns` related options no longer require the experimental feature or flag.
 ## Removed
 ## Fixed
+- Use the right characters for newlines on windows.
 ## Security
 
 # 0.70.1 (2024-08-20)
@@ -235,6 +237,7 @@
 - Add option to use DST structs for flexible arrays (--flexarray-dst, #2772).
 - Add option to dynamically load variables (#2812).
 - Add option in CLI to use rustified non-exhaustive enums (--rustified-non-exhaustive-enum, #2847).
+- Add support for custom attributes (--with-attribute-custom, #2866)
 ## Changed
 - Remove which and lazy-static dependencies (#2809, #2817).
 - Generate compile-time layout tests (#2787).
